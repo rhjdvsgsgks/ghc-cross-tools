@@ -18,9 +18,9 @@ mkdir -p "${BINDIR}"
 build_cabal() {
 	setup_ghc
 	setup_cabal
-	local version=3.10.1.0
+	local version=3.10.2.1
 	local srcurl="https://github.com/haskell/cabal/archive/Cabal-v${version}.tar.gz"
-	local sha256=710f9b14ad2851cb6192666599c37eff23b578cf619a1040bdf0b3f2c44df8b5
+	local sha256=66db7889546998cc7ac8e4125343f6fa91bb16cf32289bef67390c6b0ac9a4f3
 
 	local tar_tmpfile && tar_tmpfile="$(mktemp -t cabal.XXXXXX)"
 	download "${srcurl}" "${tar_tmpfile}" "${sha256}"
