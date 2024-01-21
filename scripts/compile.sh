@@ -20,7 +20,7 @@ build_cabal() {
 	setup_cabal
 	local version=3.10.2.1
 	local srcurl="https://github.com/haskell/cabal/archive/Cabal-v${version}.tar.gz"
-	local sha256=272720a7a7e673fa95c9269c51f2a7208072cab745a70c8e150e3ef6f718e7fc
+	local sha256=66db7889546998cc7ac8e4125343f6fa91bb16cf32289bef67390c6b0ac9a4f3
 
 	local tar_tmpfile && tar_tmpfile="$(mktemp -t cabal.XXXXXX)"
 	download "${srcurl}" "${tar_tmpfile}" "${sha256}"
